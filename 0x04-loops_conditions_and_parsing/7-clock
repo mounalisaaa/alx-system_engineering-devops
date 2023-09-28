@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#script 
+
+i=0
+
+while((i <= 12))
+do
+    echo "Hour: $i"
+    m=1
+    while((m <= 59))
+    do
+        echo "$m"
+        ((m++))
+    done
+
+    ((i++))
+done

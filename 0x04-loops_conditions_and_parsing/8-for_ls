@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# script
+
+files=$(ls)
+
+for file in $files
+do
+    new=$(echo "$file" | cut -d '-' -f2)
+
+    echo "$new"
+done
